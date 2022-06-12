@@ -11,7 +11,7 @@ html{
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    
+    box-sizing: border-box;
 
 }
 
@@ -35,7 +35,7 @@ a{
     align-items: center;
     justify-content: space-between;
     padding:2rem;
-    max-width:100%;
+    width:100%;
     box-shadow: var(--box-shadow);
 
 }
@@ -93,6 +93,6 @@ a{
 .fa-shopping-bag,
 .fa-user,
 .fa-user-circle{
-    margin-left:.8rem;
+    margin-left:.8rem;  
 
 }
