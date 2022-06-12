@@ -1,0 +1,19 @@
+html{
+    font-size: 62.5%;
+    /** 1rem = 10px; **/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --brandColor:rgb(139, 0, 109);
+    --text-color-white:white;
+    
+}
+
+
+
