@@ -1,19 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Poppins&family=Satisfy&family=Source+Sans+Pro:wght@300&display=swap');
+
 html{
     font-size: 62.5%;
     /** 1rem = 10px; **/
 }
 
+
+/** pre css **/
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    
 
 }
 
 :root{
-    --brandColor:rgb(139, 0, 109);
+    --brandColor:#db2777;
+    --logo-color:rgb(128, 4, 211);
     --text-color-white:white;
+    --link-hover-color:#db2777;
+    --box-shadow: 0 0.3rem 0.7rem #db2777;
     
 }
 
+a{
+    text-decoration: none;
+}
 
 
+/**  main css  **/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+    max-width:100%;
+    box-shadow: var(--box-shadow);
+
+}
+
+.nav .logo{
+    font-size: 3rem;
+    color:var(--logo-color);
+    padding:1rem;
+    
+}
+
+.nav .logo::first-letter{
+    font-size: 5rem;
+    font-family: serif;
+}
+
+
+.logo .logo-brand{
+    font-size: 4rem;
+    color:var(--brandColor);
+}
+
+
+.menu-bars{
+    padding:1rem;
+}
+
+.menu-bars a{
+    font-size: 3rem;
+    padding:1rem 2rem;
+    color:var(--brandColor);
+    text-transform: capitalize;
+}
+
+.menu-bars a:hover{
+    background-color: var(--link-hover-color);
+    border-radius:2rem 3rem;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color-white);
+}
+
+.search-bar .search-box{
+    font-size: 2rem;
+    padding:0.5rem;
+    padding-left:2rem;
+    outline: none;
+    border: none;
+    border:1px solid grey;
+    margin-right:2rem;
+    border-radius:3rem 3rem;
+
+}
+
+.fa-heart,
+.fa-shopping-bag,
+.fa-user,
+.fa-user-circle{
+    margin-left:.8rem;
+
+}
