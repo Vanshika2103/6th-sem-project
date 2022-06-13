@@ -1,98 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Poppins&family=Satisfy&family=Source+Sans+Pro:wght@300&display=swap');
+/** pre css  **/
+
 
 html{
     font-size: 62.5%;
-    /** 1rem = 10px; **/
-}
-
-
-/** pre css **/
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    box-sizing: border-box;
-
 }
 
 :root{
-    --brandColor:#db2777;
-    --logo-color:rgb(128, 4, 211);
+    --brand-color:rgb(238, 34, 109);
     --text-color-white:white;
-    --link-hover-color:#db2777;
-    --box-shadow: 0 0.3rem 0.7rem #db2777;
-    
+    --primary-button:rgb(238, 34, 109);
+
 }
 
-a{
-    text-decoration: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    height:200vh;
+}
 
-/**  main css  **/
-.nav{
+.header{
+background-color: var(--brand-color);
+width:100%;
+/* height:10vh; */
+padding:2rem;
+position: fixed;
+top:0;
+right:0;
+left:0;
+
+}
+
+.nav_bar{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    margin-right:8rem;
+}
+
+
+.nav_bar .logo h1 a{
+font-size: 5rem;
+text-transform: capitalize;
+color: var(--text-color-white);
+text-decoration: none;
+margin-left:5rem;
+font-family: sans-serif;
+}
+.nav_item a{
+    font-size:3rem;
+    text-decoration: none;
+    color:var(--text-color-white);
     padding:2rem;
-    width:100%;
-    box-shadow: var(--box-shadow);
 
 }
 
-.nav .logo{
-    font-size: 3rem;
-    color:var(--logo-color);
-    padding:1rem;
+
+.banner_container{
+    display: flex;
+    justify-content: space-around;
+    padding:2rem;
+    align-items: center;
+    margin-top:5rem;
+    margin-top:20rem;
     
 }
 
-.nav .logo::first-letter{
-    font-size: 5rem;
-    font-family: serif;
+
+.banner_box .img{
+   max-width:40rem;
+   border-radius: 20%;
+   box-shadow: 0 0.5rem 5rem rgb(101, 100, 100);
+
 }
 
+.banner_content{
+    padding:3rem;
+    text-align: center;
+}
 
-.logo .logo-brand{
+.banner_content h1{
+    padding:2rem;
     font-size: 4rem;
-    color:var(--brandColor);
+    margin-top:5rem;
+    text-transform: uppercase;
 }
 
-
-.menu-bars{
-    padding:1rem;
-}
-
-.menu-bars a{
-    font-size: 3rem;
-    padding:1rem 2rem;
-    color:var(--brandColor);
-    text-transform: capitalize;
-}
-
-.menu-bars a:hover{
-    background-color: var(--link-hover-color);
-    border-radius:2rem 3rem;
-    box-shadow: var(--box-shadow);
-    color: var(--text-color-white);
-}
-
-.search-bar .search-box{
+.banner_content p{
     font-size: 2rem;
-    padding:0.5rem;
-    padding-left:2rem;
+}
+
+.explore-button{
+
+    background-color: var(--primary-button);
+    color:var(--text-color-white);
     outline: none;
+    padding:2rem;
     border: none;
-    border:1px solid grey;
-    margin-right:2rem;
-    border-radius:3rem 3rem;
+    border-radius: 5rem 5rem;
+    font-size: 2rem;
+    margin-top:5rem;
+    cursor:pointer;
 
 }
 
-.fa-heart,
-.fa-shopping-bag,
-.fa-user,
-.fa-user-circle{
-    margin-left:.8rem;  
-
+.explore-button:hover{
+    background-color: var(--text-color-white);
+    color:var(--brand-color);
+    border:2px solid var(--brand-color);
 }
+
+
+.saree_cards_section{
+    /* border:5px solid red; */
+    height:200vh;
+    margin-top:5rem;
+}
+
+.saree_cards_section h1{
+    font-size: 5rem;
+    /* color:var(--brand-color); */
+    text-transform: uppercase;
+    word-spacing: 2rem;
+    text-align: center;
+    padding:3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.cards_container{
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:1;
+    align-items: center;
+    padding:3rem;
+    
+}
+
+.card img{
+   max-width:30rem;
+   /* box-shadow: 0 0.3rem 0.5rem rgb(89, 89, 89); */
+   margin-bottom: 2rem;
+}
+
+.card{
+    border:2px solid rgb(219, 215, 215);
+    padding:1rem;
+    box-shadow: 0 0.3rem 0.5rem gainsboro;
+}
+.card h3,p{
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.card h3{
+    font-size: 3rem;
+}
+
+.card p{
+font-size:2rem;
+}
+
